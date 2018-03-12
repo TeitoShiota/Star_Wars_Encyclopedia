@@ -156,9 +156,15 @@ body{
         height: auto;
     }
 
-@media only screen and(max-width: 513px){
+@media only screen and (max-width: 513px){
     .navButton a{
-        font-size: 
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 406px){
+    .navButton a{
+        font-size: 25px;
     }
 }
 }
