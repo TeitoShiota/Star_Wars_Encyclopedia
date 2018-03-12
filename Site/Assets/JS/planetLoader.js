@@ -4,23 +4,22 @@ document.addEventListener('DOMContentLoaded', fetchPlanets);
 
 function fetchPlanets(){
     console.log("fetching");
-    var load = true;
-
-    while(load){
-        var pageToLoad = 7;
-        fetch(rootURL+'planets/?page='+pageToLoad).then(function(response){
-            var planets = JSON.parse(Response.responseText);
-            console.log('Loading page: '+pageToLoad);
+    let pageToLoad
+    let v = 1;
+    for(i=1;i<8;i++){
+        fetch(rootURL+'planets/?page='+i).then(function(response){
+            return response.json();
         }).then(function(planets){
-            console.log(planets);
-            console.log(response.next);
-            if(response.next == null){
-                load = false;
+            for(k=0; k < planets.results.length; k++){
+                (function(y){
+                $(document.getElementById("innerContent")).append("<div class='divObject' id='item"+v+"'></div>");
+                $(document.getElementById("item"+v)).append("<h2 id='itemTitle'>"+""+planets.results[y].name+"</h2>");
+                $(document.getElementById("item"+v)).append("<h2 id='itemDiameter'>"+""+planets.results[y].diameter+"</h2>");
+                $(document.getElementById("item"+v)).append("<h2 id='itemPopulation'>"+""+planets.results[y].population+"</h2>");
+                console.log(planets.results[y].name);
+                v++;
+            })(k);
             }
-            console.log('Loading next page');
-            pageToLoad++;
-            
         })
-        load = false;
     }
 }
