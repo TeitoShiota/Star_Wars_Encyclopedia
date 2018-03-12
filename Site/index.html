@@ -16,12 +16,13 @@
         </div><!-- END BANNER -->
 
         <div id="hnav">
-            <nav class="nav">
-                <div class="navIcon"><a href="index.html"><i class="fas fa-home"></i></a></div>
-                <div class="navButton"><a href="#">Planets</a></div>
-                <div class="navButton"><a href="#">Characters</a></div>
-                <div class="navButton"><a href="#">Films</a></div>
-            </nav>
+            <div class="nav">
+                    <a href="#" class="active">Home</a>
+                    <a href="characters.html">Characters</a>
+                    <a href="Planets.html">Planets</a>
+                    <a href="Films.html">Films</a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+            </div>
         </div><!-- END NAV -->
 
         <div id="main">
@@ -45,7 +46,16 @@
     </div> <!-- END WRAPPER -->
 
     <!-- Scripts -->
-    <script src="Assets/JS/PlanetLoader.js"></script>
+    <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+            </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
 </body>
 </html>
