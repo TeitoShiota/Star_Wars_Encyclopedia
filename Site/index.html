@@ -7,6 +7,7 @@
     <title>Star Wars Encyclopidia</title>
     <link rel="stylesheet" type="text/css" href="CSS/baseStyle.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800" rel="stylesheet">
 </head>
 <body>
     <div class="grid-container">
@@ -16,7 +17,7 @@
         </div><!-- END BANNER -->
 
         <div id="hnav">
-            <div class="nav">
+            <div class="nav" id="myNav">
                     <a href="#" class="active">Home</a>
                     <a href="characters.html">Characters</a>
                     <a href="Planets.html">Planets</a>
@@ -48,11 +49,11 @@
     <!-- Scripts -->
     <script>
             function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
+                var x = document.getElementById("myNav");
+                if (x.className === "nav") {
                     x.className += " responsive";
                 } else {
-                    x.className = "topnav";
+                    x.className = "nav";
                 }
             }
             </script>

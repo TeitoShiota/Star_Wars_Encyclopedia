@@ -72,8 +72,8 @@ body{
     display: block;
     text-align: center;
     font-size: 30px;
-    font-family: times, 'Times New Roman', serif;
-    padding: 14px 16px;
+    font-family: 'Coda Caption', times, sans-serif;
+    padding: 8px 16px;
     text-decoration: none;
     color: #ffffff;
 }
@@ -142,5 +142,6 @@ body{
       float: none;
       display: block;
       text-align: left;
+      overflow: show;
     }
   }
