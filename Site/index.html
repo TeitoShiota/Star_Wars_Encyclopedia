@@ -11,18 +11,13 @@
 </head>
 <body>
     <div class="grid-container">
-        <div id="banner">
-            <a id="bannerImage" href="index.html"><img id="bannerImage" src="Assets/Images/mBanner.jpg" alt="Banner"></a>
-            <!--<a id="mBannerImage" href="index.html"><img id="bannerImage" src="Assets/Images/Banner.jpg" alt="Banner"></a>-->
-        </div><!-- END BANNER -->
-
         <div id="hnav">
             <div class="nav" id="myNav">
                     <a href="#" class="active">Home</a>
                     <a href="characters.html">Characters</a>
                     <a href="Planets.html">Planets</a>
                     <a href="Films.html">Films</a>
-                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="fas fa-bars fa-3x"></i></a>
             </div>
         </div><!-- END NAV -->
 
@@ -48,15 +43,15 @@
 
     <!-- Scripts -->
     <script>
-            function myFunction() {
-                var x = document.getElementById("myNav");
-                if (x.className === "nav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "nav";
-                }
+        function myFunction() {
+            var x = document.getElementById("myNav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
             }
-            </script>
+        }
+    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
 </body>
 </html>
