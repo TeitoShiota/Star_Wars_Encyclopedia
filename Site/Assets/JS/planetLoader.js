@@ -13,9 +13,9 @@ function fetchPlanets(){
             for(k=0; k < planets.results.length; k++){
                 (function(y){
                 $(document.getElementById("innerContent")).append("<div class='divObject' id='item"+v+"'></div>");
-                $(document.getElementById("item"+v)).append("<h2 id='itemTitle'>"+""+planets.results[y].name+"</h2>");
-                $(document.getElementById("item"+v)).append("<h2 id='itemDiameter'>"+""+planets.results[y].diameter+"</h2>");
-                $(document.getElementById("item"+v)).append("<h2 id='itemPopulation'>"+""+planets.results[y].population+"</h2>");
+                $(document.getElementById("item"+v)).append("<h3 id='itemTitle'>"+""+planets.results[y].name+"</h3>");
+                $(document.getElementById("item"+v)).append("<p id='itemDiameter'>"+"Diameter: "+planets.results[y].diameter+"km"+"</p>");
+                $(document.getElementById("item"+v)).append("<p id='itemPopulation'>"+"Population: "+planets.results[y].population+"</p>");
                 console.log(planets.results[y].name);
                 v++;
             })(k);
