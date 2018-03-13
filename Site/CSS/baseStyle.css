@@ -149,13 +149,13 @@ body{
     }
 
     #innerContent{
-        margin: 2em 10px;
+        margin: 1.6em 1.6em 10px 10px;
     }
 
 }
 
 /* Nav Bar Media Queries*/
-@media screen and (max-width: 673px) {
+@media screen and (max-width: 753px) {
     .nav a:not(:first-child) {display: none;}
     .nav a.icon {
       float: right;
@@ -163,7 +163,7 @@ body{
     }
   }
   
-  @media screen and (max-width: 673px) {
+  @media screen and (max-width: 753px) {
     .nav.responsive {position: relative;}
     .nav.responsive .icon {
       position: absolute;
