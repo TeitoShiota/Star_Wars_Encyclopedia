@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Star Wars Encyclopidia</title>
+    <title>Planets Collections</title>
     <link rel="stylesheet" type="text/css" href="CSS/subPageStyle.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800" rel="stylesheet">
@@ -13,19 +13,19 @@
     <div class="grid-container">
         <div id="hnav">
             <div class="nav" id="myNav">
-                    <a href="#" class="active">Home</a>
+                    <a href="index.html">Home</a>
                     <a href="Characters.html">Characters</a>
-                    <a href="Planets.html">Planets</a>
+                    <a href="#" class="active">Planets</a>
                     <a href="Films.html">Films</a>
                     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="fas fa-bars fa-3x"></i></a>
-            </div>
-        </div><!-- END NAV -->
+            </div><!-- nav -->
+        </div><!-- END hnav -->
 
         <div id="main">
             <div id="content">
                 <div id="title">
-                    <h1>Planets!</h1>
-                    <h2>The Final Frontier</h2>
+                    <h1>PLANETS!</h1>
+                    <h2>The SWAPI Collection</h2>
                 </div><!-- END Title -->
 
                 <div id="innerContent">
@@ -37,12 +37,12 @@
 
         <div id="footer">
             <!--<p>&copy;Copyright 2018 - Lasse Kristiansen</p>-->
-        </div><!-- END FOOTER -->
+        </div><!-- END footer -->
 
-    </div> <!-- END WRAPPER -->
+    </div> <!-- END wrapper -->
 
     <!-- Scripts -->
-    <script>
+    <script> 
         function myFunction() {
             var x = document.getElementById("myNav");
             if (x.className === "nav") {
@@ -51,7 +51,7 @@
                 x.className = "nav";
             }
         }
-    </script>
+    </script><!-- END myFunction  -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="Assets/JS/planetLoader.js"></script>
 </body>

@@ -1,9 +1,9 @@
 var rootURL = "https://swapi.co/api/";
-console.log("planetLoader script loaded")
+console.log("                 planetLoader script loaded")
 document.addEventListener('DOMContentLoaded', fetchPlanets);
 
 function fetchPlanets(){
-    console.log("fetching");
+    console.log("                 fetching");
     let pageToLoad
     let v = 1;
     for(i=1;i<8;i++){
@@ -19,10 +19,30 @@ function fetchPlanets(){
                 $(document.getElementById("item"+v)).append("<p class='itemDiameter'>"+"Diameter: "+planets.results[y].diameter+"km"+"</p>");
                 $(document.getElementById("item"+v)).append("<p class='itemGravity'>"+"Gravity: "+planets.results[y].gravity+"</p>");
                 $(document.getElementById("item"+v)).append("<p class='itemPopulation'>"+"Population: "+planets.results[y].population+"</p>");
-                console.log(planets.results[y].name);
                 v++;
-            })(k);
+                if(v > 61){
+                    itemSorter();
+                }})(k);
             }
         })
     }
+}
+
+function itemSorter(){
+    console.log("                 Sorting Items");
+    let items = document.querySelectorAll(".itemTitle");        //Loads all the items title into an array
+    let itemsList = [];                                         //Creates the an array to store all Items
+
+    items.forEach(function(item){
+        let itemsToBeSorted = item.innerText.replace(" ", "");  //Creates a variable to store the items and removes everything but the name
+        itemsList.push(itemsToBeSorted);                        //Adds all the names from itemsToBeSorted to the array
+        item.parentElement.dataset.itemName = itemsToBeSorted;  //Data sets the item name of the each item
+    });
+
+    itemsList.sort();                                           //Sorts all the objects in the item List array
+
+    itemsList.forEach(function(itemName){
+        let itemToMove = document.querySelector(`.divObject[data-item-name=${itemName}]`); //creates a variable then a the divObject with the date-item-name of the the first item in the items list
+        itemToMove.parentElement.append(itemToMove);            //Appends the current item to its own parent (There by moving it to the bottom)
+    });
 }
