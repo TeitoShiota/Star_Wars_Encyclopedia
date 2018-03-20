@@ -11,9 +11,9 @@ function fetchFilms(){
         return response.json();
     }).then(function(films){
         let itemSelector = 0;
-        console.log(films);
+        //console.log(films);
         for(i=0; i < films.results.length; i++){
-            console.log(films.results.length);
+            //console.log(films.results.length);
             $(document.getElementById("innerContent")).append("<div class='divObject' id='item"+v+"'></div>");
             $(document.getElementById("item"+v)).append("<h3 class='itemTitle'>"+""+films.results[itemSelector].title+"</h3>");
             $(document.getElementById("item"+v)).append("<p class='itemDirector'>"+"Directed by: "+films.results[itemSelector].director+"</p>");
@@ -24,9 +24,6 @@ function fetchFilms(){
             $(document.getElementById("item"+v)).append("<p class='itemEpisodeID' style='display:none;'>"+films.results[itemSelector].episode_id+"</p>");
             v++;
             itemSelector++;
-            if(v>7){
-                itemSorter();
-            }
         }
     })
 
@@ -51,7 +48,7 @@ function fetchFilms(){
         }
     })   */
 }
-
+/*
 function itemSorter(){
     console.log("                 Sorting Items");
     let items = document.querySelectorAll(".itemEpisodeID");        //Loads all the items title into an array
@@ -65,9 +62,9 @@ function itemSorter(){
     console.log(itemsList);
     itemsList.sort();                                           //Sorts all the objects in the item List array
     console.log(itemsList);
-    itemsList.forEach(function(itemName){
-        let itemToMove = document.querySelector(itemsList[itemsToBeSorted]); //creates a variable then a the divObject with the date-item-name of the the first item in the items list
+    itemsList.forEach (function(id){
+        let itemToMove = document.querySelector(`.divObject[data-item-name=${id}]`); //creates a variable then a the divObject with the date-item-name of the the first item in the items list
         console.log(itemToMove);
         $(itemToMove.parentElement).append(itemToMove);           //Appends the current item to its own parent (There by moving it to the bottom)
     });
-}
+}*/
