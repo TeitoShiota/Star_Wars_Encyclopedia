@@ -59,16 +59,18 @@ body{
 
 #innerContent p{
     text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
     color: #ffffff;
+    margin: 0.4em 1%;
 }
 
 #innerContent h4{
     color: #ffffffa4;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    margin:0px 15px 10px 0px;
+    margin: 0em 1% 0.5em 1%;
 }
 
 /* Nav bar */
@@ -149,7 +151,7 @@ body{
     }
 
     #innerContent{
-        margin: 1.6em 1.6em 10px 10px;
+        margin: 1em 0.6em 1em 0.6em;
     }
 
 }

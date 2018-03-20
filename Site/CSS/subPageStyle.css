@@ -58,7 +58,7 @@ body{
 }
 
 .divObject{
-    width: 45%;
+    width: 30%;
     min-width: 280px;
     min-height: 300px;
     margin: 0.6em;
@@ -156,6 +156,12 @@ body{
 
 /* Media Queries*/
 
+@media only screen and (max-width: 1338px){
+    .divObject{
+        width: 45%;
+    }
+}
+
 @media only screen and (max-width: 1080px){
     .divObject{
         width: 75%;
@@ -202,4 +208,10 @@ body{
       text-align: left;
       overflow: show;
     }
+  }
+
+  @media only screen and (max-width: 400px){
+      #innerContent{
+          justify-content: flex-start;
+      }
   }
