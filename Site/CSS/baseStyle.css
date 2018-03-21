@@ -34,7 +34,7 @@ body{
 
 #content{
     display: grid;
-    grid-template-rows: 75px minmax(400px, auto);
+    grid-template-rows: minmax(75px, auto) minmax(400px, auto);
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-areas:
     '. title .'
@@ -157,7 +157,7 @@ body{
 }
 
 /* Nav Bar Media Queries*/
-@media screen and (max-width: 753px) {
+@media only screen and (max-width: 753px) {
     .nav a:not(:first-child) {display: none;}
     .nav a.icon {
       float: right;
@@ -165,7 +165,7 @@ body{
     }
   }
   
-  @media screen and (max-width: 753px) {
+  @media only screen and (max-width: 753px) {
     .nav.responsive {position: relative;}
     .nav.responsive .icon {
       position: absolute;

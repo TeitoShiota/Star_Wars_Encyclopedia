@@ -187,7 +187,7 @@ body{
 }
 
 /* Nav Bar Media Queries*/
-@media screen and (max-width: 753px) {
+@media only screen and (max-width: 753px) {
     .nav a:not(:first-child) {display: none;}
     .nav a.icon {
       float: right;
@@ -195,7 +195,7 @@ body{
     }
   }
   
-  @media screen and (max-width: 753px) {
+  @media only screen and (max-width: 753px) {
     .nav.responsive {position: relative;}
     .nav.responsive .icon {
       position: absolute;
