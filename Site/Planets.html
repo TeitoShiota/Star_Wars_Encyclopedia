@@ -8,7 +8,7 @@
     <!-- SEO -->
     <title>Planets Collections</title>
     <meta name="keywords" content="Star Wars, Planets List, Planet information, planet">
-    <meta name="description" content="A comprihensive list of planets in the Star Wars universe">
+    <meta name="description" content="A comprehensive list of planets in the Star Wars universe">
     <meta name="robots" content="index, follow">
     
     <!-- Style and Scripts -->
@@ -25,7 +25,7 @@
                     <a href="#" class="active">Planets</a>
                     <a href="Films.html">Films</a>
                     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="fas fa-bars fa-3x"></i></a>
-            </div><!-- nav -->
+            </div><!-- END nav -->
         </div><!-- END hnav -->
 
         <div id="main">
@@ -35,29 +35,17 @@
                     <h2>The SWAPI Collection</h2>
                 </div><!-- END Title -->
 
-                <div id="innerContent">
-                    
-                </div>
-
-            </div>
+                <div id="innerContent"></div> <!-- END innerContent -->
+            </div> <!-- END Content -->
         </div> <!-- END Main -->
+    </div> <!-- END WRAPPER/Grid Container -->
 
-        <div id="footer">
-            <!--<p>&copy;Copyright 2018 - Lasse Kristiansen</p>-->
-        </div><!-- END footer -->
-
-    </div> <!-- END wrapper -->
-
-    <!-- Scripts -->
+            <!-- Scripts -->
+    <!-- Nav - Responsive bar menu-->
     <script> 
         function myFunction() {
             var x = document.getElementById("myNav");
-            if (x.className === "nav") {
-                x.className += " responsive";
-            } else {
-                x.className = "nav";
-            }
-        }
+            if (x.className === "nav") {x.className += " responsive";} else {x.className = "nav";}}
     </script><!-- END myFunction  -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="Assets/JS/planetLoader.js"></script>

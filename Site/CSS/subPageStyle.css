@@ -17,7 +17,7 @@ body{
 #title{grid-area: title;}
 #innerContent{grid-area: mainContent;}
 
-/* CSS Grid */
+/* CSS Grid containers */
 .grid-container{
     display: grid;
     grid-template-rows: minmax(50px, auto) auto 50px;
@@ -43,49 +43,7 @@ body{
     background-color: #64646480;
 }
 
-/* Layout*/
-
-
-/* Main */
-#innerContent{
-    text-align: center;
-}
-
-#innerContent{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.divObject{
-    width: 30%;
-    min-width: 280px;
-    min-height: 300px;
-    margin: 0.6em;
-    padding: 0.4em;
-    background-color: #646464b7;
-}
-
-#innerContent p{
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    color: #ffffff;
-}
-
-#innerContent h4{
-    color: #ffffffa4;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    margin:0px 15px 10px 0px;
-}
-
-/* Object Text Styles */
-.divObject h3{
-    color: #ffffff;
-    font-size: 2em;
-    margin: 0px 7px 0px 0px;
-}
+/*------- Layout --------*/
 
 /* Nav bar */
 
@@ -132,7 +90,49 @@ body{
     display: none;
 }
 
-/* Text Styles */
+/* Main */
+#innerContent{
+    text-align: center;
+}
+
+#innerContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+#innerContent p{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#innerContent h4{
+    color: #ffffffa4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin:0px 15px 10px 0px;
+}
+
+.divObject{
+    width: 30%;
+    min-width: 280px;
+    min-height: 300px;
+    margin: 0.6em;
+    padding: 0.4em;
+    background-color: #646464b7;
+}
+
+/* Object Text Styles */
+.divObject h3{
+    color: #ffffff;
+    font-size: 2em;
+    margin: 0px 7px 0px 0px;
+}
+
+/*-------- Text Styles --------*/
 #title h1,h2{
     text-align: center;
     margin-bottom: 0px;
@@ -152,9 +152,7 @@ body{
     color: #ffffff;
 }
 
-
-
-/* Media Queries*/
+/*------- Media Queries -------*/
 
 @media only screen and (max-width: 1338px){
     .divObject{
@@ -190,28 +188,27 @@ body{
 @media only screen and (max-width: 753px) {
     .nav a:not(:first-child) {display: none;}
     .nav a.icon {
-      float: right;
-      display: block;
+        float: right;
+        display: block;
     }
-  }
+}
   
-  @media only screen and (max-width: 753px) {
+@media only screen and (max-width: 753px) {
     .nav.responsive {position: relative;}
     .nav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .nav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-      overflow: show;
+        float: none;
+        display: block;
+        text-align: left;
+        overflow: show;
     }
-  }
-
-  @media only screen and (max-width: 400px){
-      #innerContent{
-          justify-content: flex-start;
-      }
-  }
+}
+@media only screen and (max-width: 400px){
+    #innerContent{
+        justify-content: flex-start;
+    }
+}

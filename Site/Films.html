@@ -7,8 +7,8 @@
     
     <!-- SEO -->
     <title>Film List</title>
-    <meta name="keywords" content="Star Wars, Planets List, Planet information, planet">
-    <meta name="description" content="A comprihensive list of planets in the Star Wars universe">
+    <meta name="keywords" content="Star Wars, film List, film information, films">
+    <meta name="description" content="A comprehensive list of the Star Wars films">
     <meta name="robots" content="index, follow">
     
     <!-- Style and Scripts -->
@@ -25,8 +25,8 @@
                     <a href="Planets.html">Planets</a>
                     <a href="#" class="active">Films</a>
                     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="fas fa-bars fa-3x"></i></a>
-            </div>
-        </div><!-- END NAV -->
+            </div> <!-- END myNav -->
+        </div><!-- END hnav -->
 
         <div id="main">
             <div id="content">
@@ -35,29 +35,17 @@
                     <h2>The Collectors Edition</h2>
                 </div><!-- END Title -->
 
-                <div id="innerContent">
-
-                </div>
-
-            </div>
+                <div id="innerContent"></div> <!-- END innerContent -->
+            </div> <!-- END Content -->
         </div> <!-- END Main -->
+    </div> <!-- END WRAPPER/Grid Container -->
 
-        <div id="footer">
-            <!--<p>&copy;Copyright 2018 - Lasse Kristiansen</p>-->
-        </div><!-- END FOOTER -->
-
-    </div> <!-- END WRAPPER -->
-
-    <!-- Scripts -->
+            <!-- Scripts -->
+    <!-- Nav - Responsive bar menu-->
     <script>
         function myFunction() {
             var x = document.getElementById("myNav");
-            if (x.className === "nav") {
-                x.className += " responsive";
-            } else {
-                x.className = "nav";
-            }
-        }
+            if (x.className === "nav") {x.className += " responsive";} else {x.className = "nav";}}
     </script>
     <script src="Assets/JS/filmLoader.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 

@@ -10,14 +10,14 @@ body{
     background-size: cover; 
 }
 
-/* CSS grid-areas*/
+/* CSS grid-areas */
 #hnav{grid-area: nav;}
 #main{grid-area: main;}
 #footer{grid-area: footer;}
 #title{grid-area: title;}
 #innerContent{grid-area: mainContent;}
 
-/* CSS Grid */
+/*-------- CSS Grid containers ---------*/
 .grid-container{
     display: grid;
     grid-template-rows: minmax(50px, auto) auto 50px;
@@ -43,35 +43,7 @@ body{
     background-color: #64646480;
 }
 
-/* Layout*/
-
-
-/* Main */
-#innerContent{
-    text-align: center;
-}
-
-#mainImg{
-    height: auto;
-    width: 98%;
-    margin-bottom: 0px; 
-}
-
-#innerContent p{
-    text-align: left;
-    font-family: 'Times New Roman', Times, sans-serif;
-    font-size: 1.2em;
-    font-weight: 500;
-    color: #ffffff;
-    margin: 0.4em 1%;
-}
-
-#innerContent h4{
-    color: #ffffffa4;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    margin: 0em 1% 0.5em 1%;
-}
+/*--------- LAYOUT ------- */
 
 /* Nav bar */
 
@@ -118,7 +90,36 @@ body{
     display: none;
 }
 
-/* Text Styles */
+/* Main */
+#innerContent{
+    text-align: center;
+}
+
+#mainImg{
+    height: auto;
+    width: 98%;
+    margin-bottom: 0px; 
+}
+
+#innerContent p{
+    text-align: left;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0.4em 1%;
+}
+
+#innerContent h4{
+    color: #ffffffa4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0em 1% 0.5em 1%;
+}
+
+
+
+/*--------- Text Styles --------*/
 #title h1,h2{
     text-align: center;
     margin-bottom: 0px;
@@ -140,7 +141,7 @@ body{
 
 
 
-/* Media Queries*/
+/*------- Media Queries --------*/
 
 @media only screen and (max-width: 753px){
     .grid-container{
@@ -165,17 +166,17 @@ body{
     }
   }
   
-  @media only screen and (max-width: 753px) {
-    .nav.responsive {position: relative;}
-    .nav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .nav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-      overflow: show;
-    }
+@media only screen and (max-width: 753px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    overflow: show;
+  }
+}
